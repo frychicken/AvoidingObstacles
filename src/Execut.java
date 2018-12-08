@@ -107,7 +107,6 @@ public class Execut  extends Component {
 			g.setColor(object);
 			g.fillRect(x + 40, y +40, 50, 50);
 		}
-		
 	}
 	public void run() {
 		frame = new JFrame("AO Simulator" + " @Debug mode: "+debugg + ", sound: "+ sound+", AP: "+ autopilot); 

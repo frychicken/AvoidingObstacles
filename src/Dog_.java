@@ -52,7 +52,6 @@ class Dog_ extends JFrame implements ActionListener {
 				}
 			}
 		});
-		
 		textfield = new JTextField("10", 16);
 		textfield2 = new JTextField("1", 12); 
 		JLabel  label = new JLabel("Enter how many lab(s) you want (default: 10)"); 
