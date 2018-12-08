@@ -42,6 +42,7 @@ public class Nani {
 				else autopilot = true;
 				exec.assin(debugg, sound, autopilot);
 			}
+			
 			else { 
 				debugg = true; 
 				if (stt != 1) {
