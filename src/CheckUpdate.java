@@ -70,8 +70,6 @@ public class CheckUpdate {
 							ex.printStackTrace();
 						}
 					}
-					Runtime r= Runtime.getRuntime();
-					r.exec("java -jar UpdaterAOW.jar");
 	                Uaow uaow = new Uaow();
 	                uaow.up();
 				}
