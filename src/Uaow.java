@@ -8,7 +8,7 @@ import java.nio.channels.ReadableByteChannel;
 import javax.swing.JOptionPane;
 class Uaow {
 	public void up() throws IOException { 
-		File file[] = new File[8];
+		File file[] = new File[9];
 		file[0] = new File(getClass().getResource("Dog_.class").toString().substring(getClass().getResource("Dog_.class").toString().indexOf(":")+1));
 		file[2] = new File(getClass().getResource("Execut.class").toString().substring(getClass().getResource("Execut.class").toString().indexOf(":")+1));
 		file[3] = new File(getClass().getResource("Nani.class").toString().substring(getClass().getResource("Nani.class").toString().indexOf(":")+1));
@@ -17,8 +17,9 @@ class Uaow {
 		file[1] = new File(getClass().getResource("Frychicken.class").toString().substring(getClass().getResource("Frychicken.class").toString().indexOf(":")+1));
 		file[6] = new File(getClass().getResource("Execut$Method_T.class").toString().substring(getClass().getResource("Execut$Method_T.class").toString().indexOf(":")+1));
 		file[7] = new File(getClass().getResource("Dog_$1.class").toString().substring(getClass().getResource("Dog_$1.class").toString().indexOf(":")+1));
+		file[8] = new File(getClass().getResource("DrawCheck.class").toString().substring(getClass().getResource("DrawCheck.class").toString().indexOf(":")+1));
 
-		for(int a =0; a<8; a++) {
+		for(int a =0; a<9; a++) {
 			try {
 				file[a].delete();
 			} catch (Exception e) {
@@ -28,7 +29,7 @@ class Uaow {
 				e.printStackTrace();
 			}
 		}
-		URL website[] = new URL[8];
+		URL website[] = new URL[9];
 		website[0] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Dog_.class");
 		website[1] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Nani.class");
 		website[2] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Execut.class");
@@ -37,10 +38,11 @@ class Uaow {
 		website[5] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Frychicken.class");
 		website[6] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Execut$Method_T.class");
 		website[7] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Dog_$1.class");
+		website[8] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/DrawCheck.class");
 
 		String cheee = getClass().getResource("").toString();
 		cheee = cheee.substring(cheee.indexOf(":")+1);
-		String af[] = new String[8];
+		String af[] = new String[9];
 		af[0] = "Dog_.class";
 		af[1] = "Nani.class";
 		af[2] = "Execut.class";
@@ -49,6 +51,7 @@ class Uaow {
 		af[5] = "Frychicken.class";
 		af[7] = "Dog_$1.class";
 		af[6] = "Execut$Method_T.class";
+		af[8] = "DrawCheck.class";
 		for(int a=0; a<8; a++) {
 			try {
 				ReadableByteChannel ok = Channels.newChannel(website[a].openStream());
