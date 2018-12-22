@@ -10,6 +10,9 @@ String todis = "Checking for updates";
 	public DrawCheck(JFrame frame) {
 		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lollol.png")));
 	}
+	public DrawCheck() {
+		
+	}
 	public void paint(Graphics g) {
 		g.drawString(todis, 80,150);
 		g.setColor(Color.BLACK);
@@ -45,5 +48,7 @@ String todis = "Checking for updates";
 		f.setColor(Color.BLACK);
 		f.drawString(display, 20,120);
 	}
+	public int getVersion() {
+		return 510; 
+	}
 }
-

@@ -1,0 +1,13 @@
+===== Time execute: 2018/12/21 20:23:08 ======
+x1 254
+y1 239
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Hit at x of object: 254
+Hit at y of object: 239
+lap: 1
+x1 233
+y1 237
+Hit at x of object: 233
+Hit at y of object: 237
