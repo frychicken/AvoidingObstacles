@@ -59,4 +59,9 @@ option to turn sound on or off
 You can control the object
 
 **Updates**
-program will check for update automatically (if there is version.txt and UpdaterAow.jar in the same location)
+
+program will check for update automatically 
+
+**log file**
+
+it will notify you the location; normally, it is located at you current directory
