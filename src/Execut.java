@@ -100,8 +100,8 @@ public class Execut  extends Component {
 				else if ((y >= yOb.get(i)  && y<= yOb.get(i) +150) && (x >= xOb.get(i)  && x <= xOb.get(i)+150) && debugg) {
 					g.setColor(Color.gray);
 					g.fillRect(xOb.get(i),yOb.get(i),150,150);
-					owenn = yOb.get(i);
-					owenn2 = xOb.get(i);
+					owenn = y;
+					owenn2 = x;
 					if (ccc ==0) {
 						System.out.println("Hit at x of object: "+owenn2);
 						System.out.println("Hit at y of object: "+owenn);
