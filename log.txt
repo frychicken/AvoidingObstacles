@@ -11,3 +11,11 @@ x1 233
 y1 237
 Hit at x of object: 233
 Hit at y of object: 237
+===== Time execute: 2018/12/30 16:57:17 ======
+x1 198
+y1 31
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Hit at x of object: 140
+Hit at y of object: 169
