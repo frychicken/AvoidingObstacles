@@ -52,6 +52,6 @@ Frychicken fry = new Frychicken();
 		f.drawString(display, 20,120);
 	}
 	public int getVersion() {
-		return 510; //510
+		return 511; 
 	}
 }
