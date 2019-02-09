@@ -1,3 +1,4 @@
+//Logic stuff
 import javax.swing.*; 
 import java.awt.*;
 import java.awt.event.KeyAdapter;
