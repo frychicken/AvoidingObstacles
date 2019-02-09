@@ -16,13 +16,11 @@ public class Nani {
 	}
 	public void downloadCus() {
 		Frychicken fry = new Frychicken();
-		String cheee = getClass().getResource("").toString();
-		cheee = cheee.substring(cheee.indexOf(":")+1);
-		System.out.println(cheee);
+		String cheee = System.getProperty("user.dir").toString();
 		try {
 			URL updaterD = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/Customizer/AOWCus.jar");
 			ReadableByteChannel ok = Channels.newChannel(updaterD.openStream());
-			FileOutputStream okay = new FileOutputStream(cheee+"AOWCus.jar");
+			FileOutputStream okay = new FileOutputStream(cheee+"/AOWCus.jar");
 			okay.getChannel().transferFrom(ok, 0, Long.MAX_VALUE);
 			okay.close();
 			ok.close();
