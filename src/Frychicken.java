@@ -20,6 +20,10 @@ public class Frychicken {
 		return JOptionPane.showConfirmDialog((Component) null, "Log file is stored at \n"+System.getProperty("user.dir")+"/log.txt",
 				"Log file", JOptionPane.CLOSED_OPTION);
 	}
+	public int QuesCus() throws Exception {
+		return JOptionPane.showConfirmDialog((Component) null, "Do you want to use your custom algorithm?",
+				"Yes", JOptionPane.YES_NO_OPTION);
+	}
 	static int cie =0;
 	static int cef =0;
 	public void writeLog(String wrr) {

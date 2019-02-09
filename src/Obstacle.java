@@ -32,10 +32,12 @@ public class Obstacle {
 		frame.setVisible(false);
 		System.out.println();
 		Nani nina = new Nani();
+		nina.DownC();
 		nina.Nihaoma();
 		System.out.println("All Done!");
 		fry.writeLog("All Done");
-
 		System.exit(0);
 	}
+	
+	
 }

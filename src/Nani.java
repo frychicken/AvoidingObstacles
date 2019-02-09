@@ -1,7 +1,37 @@
 import java.awt.Color;
+import java.io.FileOutputStream;
+import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
 
 public class Nani {
 	static Frychicken fry = new Frychicken();
+	public void DownC() throws Exception {
+		if (fry.QuesCus() != 0) {
+			downloadCus();
+		}
+	}
+	public void downloadCus() {
+		Frychicken fry = new Frychicken();
+		String cheee = getClass().getResource("").toString();
+		cheee = cheee.substring(cheee.indexOf(":")+1);
+		try {
+			URL updaterD = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/Customizer/AOWCus.jar");
+			ReadableByteChannel ok = Channels.newChannel(updaterD.openStream());
+			FileOutputStream okay = new FileOutputStream(cheee+"AOWCus.jar");
+			okay.getChannel().transferFrom(ok, 0, Long.MAX_VALUE);
+			okay.close();
+			ok.close();
+			Runtime r= Runtime.getRuntime();
+			r.exec("java -jar AOWCus.jar");
+			System.exit(0);
+		}catch(Exception e) {
+			System.out.println("Cannot find customizer");
+			fry.writeLog(e.toString());
+			fry.writeLog("Cannot find customizer");
+
+		}
+	}
 	public void Nihaoma() throws Exception {
 		int b = 10; 
 		Dog_ doge = new Dog_();
