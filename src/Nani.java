@@ -7,14 +7,18 @@ import java.nio.channels.ReadableByteChannel;
 public class Nani {
 	static Frychicken fry = new Frychicken();
 	public void DownC() throws Exception {
-		if (fry.QuesCus() != 0) {
-			downloadCus();
+		if (fry.QuesCus() == 0) {
+			downloadCus();		
+			}
+		else {
+			return;
 		}
 	}
 	public void downloadCus() {
 		Frychicken fry = new Frychicken();
 		String cheee = getClass().getResource("").toString();
 		cheee = cheee.substring(cheee.indexOf(":")+1);
+		System.out.println(cheee);
 		try {
 			URL updaterD = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/Customizer/AOWCus.jar");
 			ReadableByteChannel ok = Channels.newChannel(updaterD.openStream());
