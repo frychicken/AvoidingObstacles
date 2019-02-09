@@ -87,7 +87,7 @@ public class Execut  extends Component {
 				if ((y >= yOb.get(i) && y<= yOb.get(i) +150) && (x+123 >= xOb.get(i)  && x+123 <= xOb.get(i)+150) && debugg) {
 					g.setColor(Color.gray);
 					g.fillRect(xOb.get(i),yOb.get(i),150,150);
-					owenn = y;
+			owenn = y;
 					owenn2 = x;
 					if (ccc == 0) {
 						System.out.println("Hit at x of object: "+owenn2);
@@ -100,7 +100,7 @@ public class Execut  extends Component {
 				else if ((y >= yOb.get(i)  && y<= yOb.get(i) +150) && (x >= xOb.get(i)  && x <= xOb.get(i)+150) && debugg) {
 					g.setColor(Color.gray);
 					g.fillRect(xOb.get(i),yOb.get(i),150,150);
-					owenn = y;
+				owenn = y;
 					owenn2 = x;
 					if (ccc ==0) {
 						System.out.println("Hit at x of object: "+owenn2);
@@ -272,6 +272,8 @@ public class Execut  extends Component {
 				}
 				catch (Exception nothing) {
 					nothing.printStackTrace();
+					fry.writeLog(nothing.toString());
+
 				} 
 				frame.repaint(); 
 				right = false;

@@ -3,6 +3,7 @@ import java.awt.*;
 import javax.swing.JFrame;
 public class DrawCheck extends Component {
 String todis = "Checking for updates";
+Frychicken fry = new Frychicken();
 	private static final long serialVersionUID = 1L;
 	int x = 140;
 	String display;
@@ -22,6 +23,8 @@ String todis = "Checking for updates";
 			Thread.sleep(150);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+			fry.writeLog(e.toString());
+
 		}
 		}
 		drawdouknow(g);
@@ -49,6 +52,6 @@ String todis = "Checking for updates";
 		f.drawString(display, 20,120);
 	}
 	public int getVersion() {
-		return 510; 
+		return 510; //510
 	}
 }

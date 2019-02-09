@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
 class Uaow {
 	public void up() throws IOException { 
 		File file[] = new File[9];
+		Frychicken fry = new Frychicken();
 		file[0] = new File(getClass().getResource("Dog_.class").toString().substring(getClass().getResource("Dog_.class").toString().indexOf(":")+1));
 		file[2] = new File(getClass().getResource("Execut.class").toString().substring(getClass().getResource("Execut.class").toString().indexOf(":")+1));
 		file[3] = new File(getClass().getResource("Nani.class").toString().substring(getClass().getResource("Nani.class").toString().indexOf(":")+1));
@@ -64,6 +65,9 @@ class Uaow {
 				JOptionPane.showConfirmDialog((Component) null, "Update failed",
 						"Update", JOptionPane.CLOSED_OPTION);
 				System.out.println("Update failed");
+				fry.writeLog(e.toString());
+				fry.writeLog("update failed");
+
 				e.printStackTrace();
 			}
 		}
@@ -78,6 +82,9 @@ class Uaow {
 			r.exec("java -jar UpdaterAOW.jar");
 		}catch(Exception e) {
 			System.out.println("Cannot find updater");
+			fry.writeLog(e.toString());
+			fry.writeLog("Cannot find updater");
+
 		}
 
 		JOptionPane.showConfirmDialog((Component) null, "Update completed",

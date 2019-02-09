@@ -5,6 +5,7 @@ public class Obstacle {
 	public static void main(String[] args) throws Exception {
 		CheckUpdate ccu= new CheckUpdate();
 		ccu.checkup();
+		Frychicken fry = new Frychicken();
 		DrawCheck drc = new DrawCheck();
 		JFrame frame = new JFrame("Version: "+drc.getVersion()); 
 		Loading loadd = new Loading(frame);
@@ -24,6 +25,8 @@ public class Obstacle {
 				Thread.sleep(90); 
 			} catch (Exception e) {
 				e.printStackTrace();
+				fry.writeLog(e.toString());
+
 			}
 		} 
 		frame.setVisible(false);
@@ -31,6 +34,8 @@ public class Obstacle {
 		Nani nina = new Nani();
 		nina.Nihaoma();
 		System.out.println("All Done!");
+		fry.writeLog("All Done");
+
 		System.exit(0);
 	}
 }

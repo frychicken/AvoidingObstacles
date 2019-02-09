@@ -5,6 +5,7 @@ import javax.sound.sampled.Clip;
 import javax.sound.sampled.DataLine;
 public class Soundfx {
 	  public void sound(){
+		  Frychicken fry = new Frychicken();
 	    try{
 	      AudioInputStream audioIn = AudioSystem.getAudioInputStream(getClass().getResource("lol.wav"));
 	      AudioFormat format = audioIn.getFormat();
@@ -15,6 +16,8 @@ public class Soundfx {
 	    }
 	    catch(Exception e){
 	    	e.printStackTrace();
+			fry.writeLog(e.toString());
+
 	    }
 	  }
 }
