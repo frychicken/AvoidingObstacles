@@ -3,6 +3,8 @@ import javax.swing.*;
 import java.awt.*;
 public class Obstacle {
 	public static void main(String[] args) throws Exception {
+		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+
 		CheckUpdate ccu= new CheckUpdate();
 		ccu.checkup();
 		Frychicken fry = new Frychicken();

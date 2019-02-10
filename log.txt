@@ -25,3 +25,41 @@ Error: Cannot connect to server!
 ===== Time execute: 2019/02/08 23:18:24 ======
 Checking for updates
 No new updates
+===== Time execute: 2019/02/09 17:52:28 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/09 17:52:49 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/09 17:54:10 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/09 17:55:03 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/09 18:01:59 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/09 18:03:26 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/10 14:15:58 ======
+Checking for updates
+No new updates
+x1 172
+y1 129
+Debug mode: true
+Sound: true
+Auto-pilot: true
+Hit at x of object: 200
+Hit at y of object: 279
+lap: 1
+x1 203
+y1 221
+Hit at x of object: 200
+Hit at y of object: 371
+lap: 2
+x1 252
+y1 251
+Hit at x of object: 190
+Hit at y of object: 382
