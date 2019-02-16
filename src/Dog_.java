@@ -138,9 +138,10 @@ class Dog_ extends JFrame implements ActionListener  {
 		checkBox.setBounds(250,130,20,19);
 		checkBox2.setBounds(250,150,20,19);
 		checkBox3.setBounds(250,170,20,19);
-		lbllbl7.setBounds(270,130,120,19);
-		lbllbl8.setBounds(270,150,120,19);
-		lbllbl9.setBounds(270,170,120,19);
+		
+		lbllbl7.setBounds(280,130,120,19);
+		lbllbl8.setBounds(280,150,120,19);
+		lbllbl9.setBounds(280,170,120,19);
 		
 		button.setBounds(270,195,70,25);
 		button2.setBounds(270, 220, 65, 25);
@@ -155,11 +156,11 @@ class Dog_ extends JFrame implements ActionListener  {
 		lbllbl3.setBounds(450,80,50,15);
 		lbllbl6.setBounds(450,110,50,15);
 		
-		txtTextBox1.setBounds(270, 70, 40, 30);
+		txtTextBox1.setBounds(270, 70, 50, 30);
 		txtTextBox2.setBounds(370, 70, 50, 30);
-		txtTextBox3.setBounds(470, 70, 40, 30);
+		txtTextBox3.setBounds(470, 70, 50, 30);
 		txtTextBox4.setBounds(270, 100, 50, 30);
-		txtTextBox5.setBounds(370, 100, 40, 30);
+		txtTextBox5.setBounds(370, 100, 50, 30);
 		txtTextBox6.setBounds(470, 100, 50, 30);
 		
 
