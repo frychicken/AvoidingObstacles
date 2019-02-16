@@ -22,6 +22,8 @@ Hey, this is how auto-car works (just kidding, if this is how, maybe there are m
 
 ## BETA
 
+_Discontinued_
+
 Beta version is developed [here](https://bitbucket.org/bobdinh139/art-if-icial-intelligence/src/master/)
 
 ## TODO: 
@@ -73,6 +75,11 @@ program will check for update automatically
 **log file**
 
 it will notify you the location; normally, it is located at you current directory
+
+**Darkmode**
+
+Partially
+
 ## For advanced user
 
 _**This is an experimental feature**_
