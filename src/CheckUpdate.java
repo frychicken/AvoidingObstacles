@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Component;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -8,11 +9,14 @@ import javax.swing.JOptionPane;
 
 public class CheckUpdate {
 	private boolean stillqm = true;
- public void checkup() throws Exception {
+ public void checkup(boolean darkmode) throws Exception {
 	 Frychicken fry = new Frychicken();
 	 String todis = "Checking for updates";
 		JFrame frame = new JFrame("Checking update"); 
-		DrawCheck drc= new DrawCheck(frame);
+		DrawCheck drc= new DrawCheck(frame,darkmode);
+		if (darkmode) {
+			frame.getContentPane().setBackground(Color.DARK_GRAY);  
+		}
 		frame.getContentPane().add(BorderLayout.CENTER, drc); 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
 		frame.setResizable(false);
@@ -104,8 +108,8 @@ public class CheckUpdate {
 				
 			}
 			else {System.out.println("No new updates");
-			JOptionPane.showConfirmDialog((Component) null, "No new updates",
-					"Update", JOptionPane.CLOSED_OPTION);
+			JOptionPane.showMessageDialog((Component) null, "No new updates",
+					"Update", JOptionPane.INFORMATION_MESSAGE);
 					frame.setVisible(false);
 			stillqm = false;
 			fry.writeLog("No new updates");

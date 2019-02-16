@@ -7,10 +7,15 @@ public class Loading extends Component {
 	double strin=1;
 	String display;
 	String msg[] = new String[3];
-	public Loading(JFrame frame) {
+	boolean dark;
+	public Loading(JFrame frame, boolean darkmode) {
 		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lollol.png")));
+		dark = darkmode;
 	}
 	public void paint(Graphics g) {
+		if(dark) {
+			g.setColor(Color.WHITE);
+		}
 		g.drawString("loading...", 130,150);
 		g.drawString((int)strin + "%", 140, 210);
 		g.setColor(Color.BLACK);

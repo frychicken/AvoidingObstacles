@@ -22,13 +22,15 @@ public class Execut  extends Component {
 	int lalala;
 	int alala;
 	boolean autopilot = false;
+	boolean dark;
 	Frychicken fry = new Frychicken();
-	public Execut(int userin, Color object, Color obstacle, int i, int b) {
+	public Execut(int userin, Color object, Color obstacle, int i, int b, boolean darkmode) {
 		this.object = object;
 		this.obstacle = obstacle;
 		lalala = i;
 		alala = b;
 		this.userin = userin;
+		dark = darkmode;
 	}
 	public void assin(boolean debugg, boolean sound, boolean autopilot) throws IOException {
 		this.debugg = debugg;
@@ -144,6 +146,9 @@ public class Execut  extends Component {
 		frame = new JFrame("AO Simulator" + " @Debug mode: "+debugg + ", sound: "+ sound); 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
 		contentt = new Method_T();
+		if (dark) {
+			frame.getContentPane().setBackground(Color.DARK_GRAY);  
+		}
 		frame.getContentPane().add(BorderLayout.CENTER, contentt);  
 		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lollol.png")));
 		frame.setResizable(false);

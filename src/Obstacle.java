@@ -4,14 +4,22 @@ import java.awt.*;
 public class Obstacle {
 	public static void main(String[] args) throws Exception {
 		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-
-		CheckUpdate ccu= new CheckUpdate();
-		ccu.checkup();
 		Frychicken fry = new Frychicken();
+		boolean darkmode = false;
+		if (fry.Darkmode() !=1) {
+			darkmode = true;
+		}
+		CheckUpdate ccu= new CheckUpdate();
+		ccu.checkup(darkmode);
 		DrawCheck drc = new DrawCheck();
 		JFrame frame = new JFrame("Version: "+drc.getVersion()); 
-		Loading loadd = new Loading(frame);
+		
+		Loading loadd = new Loading(frame, darkmode);
+		
 		frame.getContentPane().add(BorderLayout.CENTER, loadd); 
+		if (darkmode) {
+			frame.getContentPane().setBackground(Color.DARK_GRAY);  
+		}
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
 		frame.setResizable(false);
 		frame.setSize(300, 300); 	
@@ -33,7 +41,7 @@ public class Obstacle {
 		} 
 		frame.setVisible(false);
 		System.out.println();
-		Nani nina = new Nani();
+		Nani nina = new Nani(darkmode);
 		nina.DownC();
 		nina.Nihaoma();
 		System.out.println("All Done!");

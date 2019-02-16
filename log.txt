@@ -63,3 +63,184 @@ x1 252
 y1 251
 Hit at x of object: 190
 Hit at y of object: 382
+===== Time execute: 2019/02/15 17:01:41 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:02:47 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:04:02 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:04:59 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:06:17 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:07:42 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:08:42 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:09:49 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:10:42 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:11:46 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:12:57 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:14:28 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:15:01 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:15:28 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:16:29 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:22:13 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:23:45 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:26:23 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:27:34 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:27:59 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:44:22 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:50:30 ======
+Checking for updates
+No new updates
+Debug mode: false
+Sound: false
+Auto-pilot: true
+lap: 1
+===== Time execute: 2019/02/15 17:56:42 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:57:59 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:58:28 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 17:58:45 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:01:58 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:02:13 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:05:54 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:08:59 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:09:49 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:11:20 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:11:52 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:13:32 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:16:50 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:17:23 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:29:23 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:30:37 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:37:27 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:38:19 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:45:15 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:54:17 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:54:49 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:57:09 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 18:58:10 ======
+Checking for updates
+No new updates
+x1 56
+y1 186
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Hit at x of object: 200
+Hit at y of object: 336
+lap: 1
+x1 167
+y1 253
+Hit at x of object: 200
+Hit at y of object: 403
+lap: 2
+x1 235
+y1 62
+===== Time execute: 2019/02/15 18:59:52 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 19:02:39 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 19:05:51 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 19:08:31 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 19:09:06 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 19:20:55 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 19:28:57 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 19:30:28 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/02/15 19:32:13 ======
+Checking for updates
+No new updates

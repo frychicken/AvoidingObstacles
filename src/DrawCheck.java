@@ -8,13 +8,18 @@ Frychicken fry = new Frychicken();
 	int x = 140;
 	String display;
 	String msg[] = new String[3];
-	public DrawCheck(JFrame frame) {
+	boolean dark;
+	public DrawCheck(JFrame frame, boolean darkmode) {
+		dark = darkmode;
 		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lollol.png")));
 	}
 	public DrawCheck() {
 		
 	}
 	public void paint(Graphics g) {
+		if (dark) {
+			g.setColor(Color.WHITE);
+		}
 		g.drawString(todis, 80,150);
 		g.setColor(Color.BLACK);
 		for (int i =0; i<5; i++) {
@@ -52,6 +57,6 @@ Frychicken fry = new Frychicken();
 		f.drawString(display, 20,120);
 	}
 	public int getVersion() {
-		return 511; 
+		return 520; 
 	}
 }

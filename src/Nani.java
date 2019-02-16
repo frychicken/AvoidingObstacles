@@ -5,6 +5,10 @@ import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 
 public class Nani {
+	boolean darkmode;
+	public Nani(boolean darkmode) {
+		this.darkmode= darkmode;
+	}
 	static Frychicken fry = new Frychicken();
 	public void DownC() throws Exception {
 		if (fry.QuesCus() == 0) {
@@ -37,6 +41,7 @@ public class Nani {
 	public void Nihaoma() throws Exception {
 		int b = 10; 
 		Dog_ doge = new Dog_();
+		doge.asss(darkmode);
 		String reduc = doge.cat_();
 		Color obstacle = new Color(Integer.valueOf(reduc.substring(reduc.indexOf("*")+1,reduc.indexOf("!"))),Integer.valueOf(reduc.substring(reduc.indexOf("!")+1,reduc.indexOf("@"))),Integer.valueOf(reduc.substring(reduc.indexOf("@")+1,reduc.indexOf("#"))));
 		Color object = new Color(Integer.valueOf(reduc.substring(reduc.indexOf("#")+1,reduc.indexOf("$"))),Integer.valueOf(reduc.substring(reduc.indexOf("$")+1,reduc.indexOf("%"))),Integer.valueOf(reduc.substring(reduc.indexOf("%")+1, reduc.indexOf("^"))));
@@ -61,7 +66,7 @@ public class Nani {
 		boolean autopilot = true;
 		System.out.println("Obstacle(s): "+ userin);
 		while (i <= b) {
-			Execut exec = new Execut(userin, object, obstacle,i,b); 
+			Execut exec = new Execut(userin, object, obstacle,i,b, darkmode); 
 			if (st != 1) {
 				debugg = false;
 				if (stt != 1) {

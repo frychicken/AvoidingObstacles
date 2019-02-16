@@ -10,7 +10,11 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import javax.swing.*; 
-class Dog_ extends JFrame implements ActionListener { 
+class Dog_ extends JFrame implements ActionListener  { 
+	boolean dark;
+	public void asss(boolean darkmode) {
+		dark = darkmode;
+	}
 	private static final long serialVersionUID = 1L;
 	static JFrame frame;
 	static JTextField textfield; 
@@ -27,6 +31,8 @@ class Dog_ extends JFrame implements ActionListener {
 	public String cat_() throws Exception{
 		final URI uri = new URI("https://github.com/frychicken/art-IF-icial-Intelligence/blob/master/README.md");
 		frame = new JFrame("Setup");
+
+			
 		JButton button2 = new JButton();
 		button2.setText("help");
 		button2.setHorizontalAlignment(SwingConstants.LEFT);
@@ -76,7 +82,25 @@ class Dog_ extends JFrame implements ActionListener {
 		JPanel panel = new JPanel(); 
 		checkBox = new JCheckBox("Debug mode");  	
 		checkBox2 = new JCheckBox("Sound");  	
-		checkBox3 = new JCheckBox("Auto-pilot");  
+		checkBox3 = new JCheckBox("Auto-pilot");
+		if (dark) {
+			panel.setBackground(Color.DARK_GRAY);  
+			panel.setOpaque(true);
+			label.setForeground(Color.white);
+			label2.setForeground(Color.white);
+			lblLabel1.setForeground(Color.white);
+			lblLabel2.setForeground(Color.white);
+			lbllbl1.setForeground(Color.white);
+			lbllbl2.setForeground(Color.white);
+			lbllbl3.setForeground(Color.white);
+			lbllbl4.setForeground(Color.white);
+			lbllbl5.setForeground(Color.white);
+			lbllbl6.setForeground(Color.white);
+			checkBox.setForeground(Color.white);
+			checkBox2.setForeground(Color.white);
+			checkBox3.setForeground(Color.white);
+			
+		}
 		panel.add(label);  
 		panel.add(textfield); 
 		panel.add(label2);
@@ -98,29 +122,37 @@ class Dog_ extends JFrame implements ActionListener {
 		panel.add(txtTextBox6);
 		panel.setLayout(null);
 		frame.add(panel);  
+		
 		label.setBounds(7, 1, 400,30);
-		textfield.setBounds(330, 7, 170,20);
-		label2.setBounds(7, 30, 500,30);
-		textfield2.setBounds(410, 34, 100,20);
-		checkBox.setBounds(250,100,120,19);
-		checkBox2.setBounds(250,120,120,19);
-		checkBox3.setBounds(250,140,120,19);
-		button.setBounds(270,160,70,25);
-		button2.setBounds(270, 185, 65, 25);
-		lblLabel1.setBounds(7, 60, 250,20);
-		lblLabel2.setBounds(7, 80, 200,20);
-		lbllbl1.setBounds(250,65,50,10);
-		lbllbl4.setBounds(250,85,50,10);
-		lbllbl2.setBounds(350,65,50,10);
-		lbllbl5.setBounds(350,85,50,10);
-		lbllbl3.setBounds(450,65,50,10);
-		lbllbl6.setBounds(450,85,50,10);
-		txtTextBox1.setBounds(270, 60, 40, 20);
-		txtTextBox2.setBounds(370, 60, 40, 20);
-		txtTextBox3.setBounds(470, 60, 40, 20);
-		txtTextBox4.setBounds(270, 80, 40, 20);
-		txtTextBox5.setBounds(370, 80, 40, 20);
-		txtTextBox6.setBounds(470, 80, 40, 20);
+		textfield.setBounds(330, 7, 170,30);
+		label2.setBounds(7, 40, 500,30);
+		textfield2.setBounds(410, 40, 100,30);
+		
+		checkBox.setBounds(250,130,120,19);
+		checkBox2.setBounds(250,150,120,19);
+		checkBox3.setBounds(250,170,120,19);
+		
+		button.setBounds(270,195,70,25);
+		button2.setBounds(270, 220, 65, 25);
+		
+		lblLabel1.setBounds(7, 80, 250,20);
+		lblLabel2.setBounds(7, 100, 200,20);
+		
+		lbllbl1.setBounds(250,80,50,15);
+		lbllbl4.setBounds(250,110,50,15);
+		lbllbl2.setBounds(350,80,50,15);
+		lbllbl5.setBounds(350,110,50,15);
+		lbllbl3.setBounds(450,80,50,15);
+		lbllbl6.setBounds(450,110,50,15);
+		
+		txtTextBox1.setBounds(270, 70, 40, 30);
+		txtTextBox2.setBounds(370, 70, 50, 30);
+		txtTextBox3.setBounds(470, 70, 40, 30);
+		txtTextBox4.setBounds(270, 100, 50, 30);
+		txtTextBox5.setBounds(370, 100, 40, 30);
+		txtTextBox6.setBounds(470, 100, 50, 30);
+		
+
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(600, 300); 
 		frame.setResizable(false);
