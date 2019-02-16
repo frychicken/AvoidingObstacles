@@ -70,6 +70,11 @@ class Dog_ extends JFrame implements ActionListener  {
 		JLabel lbllbl4 = new JLabel("R");
 		JLabel lbllbl5 = new JLabel("G");
 		JLabel lbllbl6 = new JLabel("B");
+		
+		JLabel lbllbl7 = new JLabel("Debug mode");
+		JLabel lbllbl8 = new JLabel("Sound");
+		JLabel lbllbl9 = new JLabel("Auto-pilot");
+		
 		txtTextBox1 = new JTextField("0");
 		txtTextBox2 = new JTextField("255"); 
 		txtTextBox3 = new JTextField("0");
@@ -80,9 +85,9 @@ class Dog_ extends JFrame implements ActionListener  {
 		Dog_ loen = new Dog_(); 
 		button.addActionListener(loen); 
 		JPanel panel = new JPanel(); 
-		checkBox = new JCheckBox("Debug mode");  	
-		checkBox2 = new JCheckBox("Sound");  	
-		checkBox3 = new JCheckBox("Auto-pilot");
+		checkBox = new JCheckBox();  	
+		checkBox2 = new JCheckBox();  	
+		checkBox3 = new JCheckBox();
 		if (dark) {
 			panel.setBackground(Color.DARK_GRAY);  
 			panel.setOpaque(true);
@@ -96,10 +101,12 @@ class Dog_ extends JFrame implements ActionListener  {
 			lbllbl4.setForeground(Color.white);
 			lbllbl5.setForeground(Color.white);
 			lbllbl6.setForeground(Color.white);
-			checkBox.setForeground(Color.white);
-			checkBox2.setForeground(Color.white);
-			checkBox3.setForeground(Color.white);
 			
+			lbllbl7.setForeground(Color.white);
+			lbllbl8.setForeground(Color.white);
+			lbllbl9.setForeground(Color.white);
+
+	
 		}
 		panel.add(label);  
 		panel.add(textfield); 
@@ -117,7 +124,7 @@ class Dog_ extends JFrame implements ActionListener  {
 		panel.add(lbllbl3);
 		panel.add(lbllbl4);
 		panel.add(lbllbl5);
-		panel.add(lbllbl6);
+		panel.add(lbllbl6); panel.add(lbllbl7); panel.add(lbllbl8); panel.add(lbllbl9);
 		panel.add(txtTextBox1); panel.add(txtTextBox2); panel.add(txtTextBox3); panel.add(txtTextBox4); panel.add(txtTextBox5);
 		panel.add(txtTextBox6);
 		panel.setLayout(null);
@@ -128,9 +135,12 @@ class Dog_ extends JFrame implements ActionListener  {
 		label2.setBounds(7, 40, 500,30);
 		textfield2.setBounds(410, 40, 100,30);
 		
-		checkBox.setBounds(250,130,120,19);
-		checkBox2.setBounds(250,150,120,19);
-		checkBox3.setBounds(250,170,120,19);
+		checkBox.setBounds(250,130,20,19);
+		checkBox2.setBounds(250,150,20,19);
+		checkBox3.setBounds(250,170,20,19);
+		lbllbl7.setBounds(270,130,120,19);
+		lbllbl8.setBounds(270,150,120,19);
+		lbllbl9.setBounds(270,170,120,19);
 		
 		button.setBounds(270,195,70,25);
 		button2.setBounds(270, 220, 65, 25);
