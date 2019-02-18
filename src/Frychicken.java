@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 import javax.swing.JOptionPane;
 
 public class Frychicken {
-	
+
 	public int ChickenNotFood() throws Exception {
 
 		return JOptionPane.showConfirmDialog((Component) null, "Done! Are your sure you want to exit?",
@@ -21,8 +21,8 @@ public class Frychicken {
 				"Hmmm? Na ni?", JOptionPane.CLOSED_OPTION);
 	}
 	public void isstored() throws Exception {
-	
-		 JOptionPane.showMessageDialog((Component)null, "Log file is stored at \n"+System.getProperty("user.dir")+"/log.txt",
+
+		JOptionPane.showMessageDialog((Component)null, "Log file is stored at \n"+System.getProperty("user.dir")+"/log.txt",
 				"Log file", JOptionPane.INFORMATION_MESSAGE);
 	}
 	public int QuesCus() throws Exception {

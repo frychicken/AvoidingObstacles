@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 
 public class CheckUpdate {
 	private boolean stillqm = true;
@@ -108,6 +109,11 @@ public class CheckUpdate {
 				
 			}
 			else {System.out.println("No new updates");
+			if (darkmode) {
+				UIManager.put("OptionPane.background", Color.DARK_GRAY);
+				 UIManager.put("Panel.background", Color.DARK_GRAY);
+					UIManager.put("OptionPane.messageForeground", Color.WHITE);
+			}
 			JOptionPane.showMessageDialog((Component) null, "No new updates",
 					"Update", JOptionPane.INFORMATION_MESSAGE);
 					frame.setVisible(false);
