@@ -18,6 +18,10 @@ public class Obstacle {
 		
 		frame.getContentPane().add(BorderLayout.CENTER, loadd); 
 		if (darkmode) {
+			UIManager.put("OptionPane.background", Color.DARK_GRAY);
+			 UIManager.put("Panel.background", Color.DARK_GRAY);
+				UIManager.put("OptionPane.messageForeground", Color.WHITE);
+
 			frame.getContentPane().setBackground(Color.DARK_GRAY);  
 		}
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
