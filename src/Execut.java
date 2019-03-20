@@ -3,6 +3,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.IOException;
 import java.util.*;
 public class Execut  extends Component {
@@ -24,6 +26,7 @@ public class Execut  extends Component {
 	boolean autopilot = false;
 	boolean dark;
 	Frychicken fry = new Frychicken();
+	Estima est = new Estima();
 	public Execut(int userin, Color object, Color obstacle, int i, int b, boolean darkmode) {
 		this.object = object;
 		this.obstacle = obstacle;
@@ -144,7 +147,16 @@ public class Execut  extends Component {
 	}
 	public void run() {
 		frame = new JFrame("AO Simulator" + " @Debug mode: "+debugg + ", sound: "+ sound); 
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+		frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE); 
+		frame.addWindowListener(new WindowAdapter() {
+			   public void windowClosing(WindowEvent evt) {
+				     System.out.println();
+			     System.out.println("Program terminated by user");
+			     fry.writeLog("Program terminated by user");
+			     est.getEst();
+			     System.exit(0);
+			   }
+			  });
 		contentt = new Method_T();
 		if (dark) {
 			frame.getContentPane().setBackground(Color.DARK_GRAY);  

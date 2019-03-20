@@ -1,14 +1,22 @@
 //Main file
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 public class Obstacle {
 	public static void main(String[] args) throws Exception {
+		   long startTime = System.currentTimeMillis();
+		   Estima est = new Estima();
+		   long endTime = 0;
+		   long timenee;
 		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		Frychicken fry = new Frychicken();
+		 est.ass(startTime);
 		boolean darkmode = false;
 		if (fry.Darkmode() !=1) {
 			darkmode = true;
 		}
+		 
 		CheckUpdate ccu= new CheckUpdate();
 		ccu.checkup(darkmode);
 		DrawCheck drc = new DrawCheck();
@@ -24,7 +32,18 @@ public class Obstacle {
 
 			frame.getContentPane().setBackground(Color.DARK_GRAY);  
 		}
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+		frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		frame.addWindowListener(new WindowAdapter() {
+			   public void windowClosing(WindowEvent evt) {
+				   System.out.println();
+				   System.out.println("Program terminated by user");
+			     fry.writeLog("Program terminated by user");
+	
+			     est.getEst();
+			  System.exit(0);
+			     
+			   }
+			  });
 		frame.setResizable(false);
 		frame.setSize(300, 300); 	
 		frame.setLocationRelativeTo(null);
@@ -50,6 +69,11 @@ public class Obstacle {
 		nina.Nihaoma();
 		System.out.println("All Done!");
 		fry.writeLog("All Done");
+		endTime = System.currentTimeMillis();
+
+		timenee =  ((endTime- startTime) /1000);
+		System.out.println("Time executed: "+ timenee + " seconds");
+		fry.writeLog("Time executed: " + timenee + " seconds");
 		System.exit(0);
 	}
 	

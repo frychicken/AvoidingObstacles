@@ -27,12 +27,13 @@ class Dog_ extends JFrame implements ActionListener  {
 	static int ff=0;
 	static int fff=0;
 	static int owen = 0;
+	Estima est = new Estima();
 	static List<Integer> doggo = new LinkedList<Integer>();
 	public String cat_() throws Exception{
 		final URI uri = new URI("https://github.com/frychicken/art-IF-icial-Intelligence/blob/master/README.md");
 		frame = new JFrame("Setup");
 
-			
+			Frychicken fry = new Frychicken();
 		JButton button2 = new JButton();
 		button2.setText("help");
 		button2.setHorizontalAlignment(SwingConstants.LEFT);
@@ -164,7 +165,15 @@ class Dog_ extends JFrame implements ActionListener  {
 		txtTextBox6.setBounds(470, 100, 50, 30);
 		
 
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		frame.addWindowListener(new WindowAdapter() {
+			   public void windowClosing(WindowEvent evt) {
+			     System.out.println("Program terminated by user");
+			     fry.writeLog("Program terminated by user");
+			     est.getEst();
+			     System.exit(0);
+			   }
+			  });
 		frame.setSize(600, 300); 
 		frame.setResizable(false);
 		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("lollol.png")));
