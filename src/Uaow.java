@@ -8,7 +8,7 @@ import java.nio.channels.ReadableByteChannel;
 import javax.swing.JOptionPane;
 class Uaow {
 	public void up() throws IOException { 
-		File file[] = new File[9];
+		File file[] = new File[10];
 		Frychicken fry = new Frychicken();
 		file[0] = new File(getClass().getResource("Dog_.class").toString().substring(getClass().getResource("Dog_.class").toString().indexOf(":")+1));
 		file[2] = new File(getClass().getResource("Execut.class").toString().substring(getClass().getResource("Execut.class").toString().indexOf(":")+1));
@@ -19,6 +19,7 @@ class Uaow {
 		file[6] = new File(getClass().getResource("Execut$Method_T.class").toString().substring(getClass().getResource("Execut$Method_T.class").toString().indexOf(":")+1));
 		file[7] = new File(getClass().getResource("Dog_$1.class").toString().substring(getClass().getResource("Dog_$1.class").toString().indexOf(":")+1));
 		file[8] = new File(getClass().getResource("DrawCheck.class").toString().substring(getClass().getResource("DrawCheck.class").toString().indexOf(":")+1));
+		file[9] = new File(getClass().getResource("Estima.class").toString().substring(getClass().getResource("Estima.class").toString().indexOf(":")+1));
 
 		for(int a =0; a<9; a++) {
 			try {
@@ -30,7 +31,7 @@ class Uaow {
 				e.printStackTrace();
 			}
 		}
-		URL website[] = new URL[9];
+		URL website[] = new URL[10];
 		website[0] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Dog_.class");
 		website[1] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Nani.class");
 		website[2] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Execut.class");
@@ -40,7 +41,8 @@ class Uaow {
 		website[6] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Execut$Method_T.class");
 		website[7] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Dog_$1.class");
 		website[8] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/DrawCheck.class");
-        
+		website[9] = new URL("https://raw.githubusercontent.com/frychicken/art-IF-icial-Intelligence/master/bin/Estima.class");
+
 		String cheee = getClass().getResource("").toString();
 		cheee = cheee.substring(cheee.indexOf(":")+1);
 		String af[] = new String[9];
