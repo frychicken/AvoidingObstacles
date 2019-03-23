@@ -25,6 +25,7 @@ public class Execut  extends Component {
 	int alala;
 	boolean autopilot = false;
 	boolean dark;
+	boolean game;
 	Frychicken fry = new Frychicken();
 	Estima est = new Estima();
 	public Execut(int userin, Color object, Color obstacle, int i, int b, boolean darkmode) {
@@ -35,10 +36,11 @@ public class Execut  extends Component {
 		this.userin = userin;
 		dark = darkmode;
 	}
-	public void assin(boolean debugg, boolean sound, boolean autopilot) throws IOException {
+	public void assin(boolean debugg, boolean sound, boolean autopilot, boolean gamem) throws IOException {
 		this.debugg = debugg;
 		this.sound = sound;
 		this.autopilot = autopilot;
+		game = gamem;
 		for (int i =0; i < userin; i++) {
 			if (i ==0 || i ==2) {
 				xOb.add(RanX());
@@ -138,6 +140,7 @@ public class Execut  extends Component {
 					g.drawString("Obstacle(s): "+userin, 60, 700);
 					g.drawString("lab(s): "+alala, 60, 680);	
 					g.drawString("auto-pilot: "+autopilot, 250, 690);	
+					g.drawString("Game mode: "+game, 250, 705);	
 
 				}
 			}
@@ -175,6 +178,11 @@ public class Execut  extends Component {
 		frame.setFocusable(true); 
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true); 
+		   int firstexe = 0;
+			if (game&&firstexe==0) {
+		   	 up = false;
+		   	 firstexe++;
+		    }
 		runpls();
 	}
 
@@ -184,9 +192,11 @@ public class Execut  extends Component {
 	private boolean up = true;
 	private boolean down = false;
 	private boolean check = true;
-
+ 
+	
 	public void moveTheTHing(KeyEvent event) { 
-
+         
+	
 		int key = event.getKeyCode(); 
 		int key2 = event.getKeyChar();
 		if (key == KeyEvent.VK_LEFT) {
@@ -220,11 +230,37 @@ public class Execut  extends Component {
 
 	}
 
-
+	public void gameover(){
+	fry.writeLog("Game over");
+	System.out.println("Game over");
+	est.getEst();
+    try {
+		fry.YouLose();
+	} catch (Exception e) {
+		fry.writeLog(e.toString());
+	}
+	
+	System.exit(0);
+	}
+	
 	public void runpls(){
 		while(true) {
 
 			for (int i =0; i < userin; i ++) {
+				
+				if(game) {
+					
+					if ((y+40 >= yOb.get(i) && y+40<= yOb.get(i) +150) && (x+40 >= xOb.get(i)  && x+40 <= xOb.get(i)+150) ) {
+
+						gameover();
+					}
+					else if ((y+90 >= yOb.get(i)  && y+90<= yOb.get(i) +150) && (x+90 >= xOb.get(i)  && x+90 <= xOb.get(i)+150) ) {
+						gameover();
+						
+					}
+					
+				}
+				
 				if ((y >= yOb.get(i) && y<= yOb.get(i) +150) && (x+123 >= xOb.get(i)  && x+123 <= xOb.get(i)+150) && check) {
 
 					left = true;

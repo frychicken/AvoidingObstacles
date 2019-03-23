@@ -24,9 +24,11 @@ class Dog_ extends JFrame implements ActionListener  {
 	static JCheckBox checkBox;
 	static JCheckBox checkBox2;
 	static JCheckBox checkBox3;
+	static JCheckBox checkBox4;
 	static int ff=0;
 	static int fff=0;
 	static int owen = 0;
+	static int emaa = 0;
 	Estima est = new Estima();
 	static List<Integer> doggo = new LinkedList<Integer>();
 	public String cat_() throws Exception{
@@ -75,7 +77,8 @@ class Dog_ extends JFrame implements ActionListener  {
 		JLabel lbllbl7 = new JLabel("Debug mode");
 		JLabel lbllbl8 = new JLabel("Sound");
 		JLabel lbllbl9 = new JLabel("Auto-pilot");
-		
+		JLabel lbllbl10 = new JLabel("Game mode");
+
 		txtTextBox1 = new JTextField("0");
 		txtTextBox2 = new JTextField("255"); 
 		txtTextBox3 = new JTextField("0");
@@ -89,6 +92,8 @@ class Dog_ extends JFrame implements ActionListener  {
 		checkBox = new JCheckBox();  	
 		checkBox2 = new JCheckBox();  	
 		checkBox3 = new JCheckBox();
+		checkBox4 = new JCheckBox();
+
 		if (dark) {
 			panel.setBackground(Color.DARK_GRAY);  
 			panel.setOpaque(true);
@@ -116,6 +121,8 @@ class Dog_ extends JFrame implements ActionListener  {
 		panel.add(checkBox);
 		panel.add(checkBox2);
 		panel.add(checkBox3);
+		panel.add(checkBox4);
+
 		panel.add(button); 
 		panel.add(button2);
 		panel.add(lblLabel1);
@@ -125,7 +132,7 @@ class Dog_ extends JFrame implements ActionListener  {
 		panel.add(lbllbl3);
 		panel.add(lbllbl4);
 		panel.add(lbllbl5);
-		panel.add(lbllbl6); panel.add(lbllbl7); panel.add(lbllbl8); panel.add(lbllbl9);
+		panel.add(lbllbl6); panel.add(lbllbl7); panel.add(lbllbl8); panel.add(lbllbl9);panel.add(lbllbl10);
 		panel.add(txtTextBox1); panel.add(txtTextBox2); panel.add(txtTextBox3); panel.add(txtTextBox4); panel.add(txtTextBox5);
 		panel.add(txtTextBox6);
 		panel.setLayout(null);
@@ -139,13 +146,16 @@ class Dog_ extends JFrame implements ActionListener  {
 		checkBox.setBounds(250,130,20,19);
 		checkBox2.setBounds(250,150,20,19);
 		checkBox3.setBounds(250,170,20,19);
+		checkBox4.setBounds(250,190,20,19);
+
 		
 		lbllbl7.setBounds(280,130,120,19);
 		lbllbl8.setBounds(280,150,120,19);
 		lbllbl9.setBounds(280,170,120,19);
-		
-		button.setBounds(270,195,70,25);
-		button2.setBounds(270, 220, 65, 25);
+		lbllbl10.setBounds(280,190,120,19);
+
+		button.setBounds(270,215,70,25);
+		button2.setBounds(270, 240, 65, 25);
 		
 		lblLabel1.setBounds(7, 80, 250,20);
 		lblLabel2.setBounds(7, 100, 200,20);
@@ -204,6 +214,9 @@ class Dog_ extends JFrame implements ActionListener  {
 		}
 		if(checkBox3.isSelected()) {
 			owen =1;
+		}
+		if(checkBox4.isSelected()) {
+			emaa =1;
 		}
 		if (s.equals("Okay") ) { 
 			synchronized (doggo) {

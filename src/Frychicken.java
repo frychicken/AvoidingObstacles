@@ -10,6 +10,16 @@ import javax.swing.JOptionPane;
 
 public class Frychicken {
 
+	public void YouWin() throws Exception {
+         JOptionPane.showMessageDialog((Component) null, "You Win!",
+				"You Win!", JOptionPane.CLOSED_OPTION);
+	}
+	
+	public void YouLose() throws Exception {
+        JOptionPane.showMessageDialog((Component) null, "The program will now exit!",
+				"GameOver", JOptionPane.CLOSED_OPTION);
+	}
+	
 	public int ChickenNotFood() throws Exception {
 
 		return JOptionPane.showConfirmDialog((Component) null, "Done! Are your sure you want to exit?",

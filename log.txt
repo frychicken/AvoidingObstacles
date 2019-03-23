@@ -940,3 +940,224 @@ Checking for updates
 No new updates
 Program terminated by user
 Time executed: 7 seconds
+===== Time execute: 2019/03/23 11:29:37 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 1553354994 seconds
+===== Time execute: 2019/03/23 11:30:08 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 1553355027 seconds
+===== Time execute: 2019/03/23 11:31:08 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 1553355087 seconds
+===== Time execute: 2019/03/23 11:32:56 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 1553355192 seconds
+===== Time execute: 2019/03/23 11:53:30 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 1553356428 seconds
+===== Time execute: 2019/03/23 11:54:10 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 1553356462 seconds
+===== Time execute: 2019/03/23 12:16:26 ======
+Program terminated by user
+Time executed: 1553357786 seconds
+===== Time execute: 2019/03/23 14:47:57 ======
+Checking for updates
+No new updates
+x1 191
+y1 244
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: true
+Hit at x of object: 200
+Hit at y of object: 394
+lap: 1
+x1 216
+y1 98
+Hit at x of object: 200
+Hit at y of object: 248
+lap: 2
+x1 206
+y1 317
+Hit at x of object: 200
+Hit at y of object: 467
+lap: 3
+x1 318
+y1 372
+Hit at x of object: 210
+Hit at y of object: 522
+lap: 4
+x1 295
+y1 243
+Hit at x of object: 210
+Hit at y of object: 393
+Program terminated by user
+Time executed: 1553366964 seconds
+===== Time execute: 2019/03/23 14:49:49 ======
+Checking for updates
+No new updates
+x1 288
+y1 186
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: true
+Hit at x of object: 210
+Hit at y of object: 336
+lap: 1
+x1 118
+y1 208
+Hit at x of object: 180
+Hit at y of object: 358
+lap: 2
+x1 137
+y1 70
+Hit at x of object: 190
+Hit at y of object: 208
+Program terminated by user
+Time executed: 1553367040 seconds
+===== Time execute: 2019/03/23 14:51:56 ======
+Checking for updates
+No new updates
+x1 301
+y1 272
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: true
+Hit at x of object: 200
+Hit at y of object: 422
+===== Time execute: 2019/03/23 14:52:37 ======
+Checking for updates
+No new updates
+x1 117
+y1 398
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: true
+Hit at x of object: 200
+Hit at y of object: 548
+===== Time execute: 2019/03/23 14:53:09 ======
+Checking for updates
+No new updates
+x1 119
+y1 379
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: true
+Hit at x of object: 200
+Hit at y of object: 529
+===== Time execute: 2019/03/23 15:45:01 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 14 seconds
+===== Time execute: 2019/03/23 16:48:37 ======
+Checking for updates
+No new updates
+x1 68
+y1 179
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: true
+Hit at x of object: 210
+Hit at y of object: 319
+lap: 1
+x1 220
+y1 344
+Hit at x of object: 200
+Hit at y of object: 494
+lap: 2
+x1 33
+y1 313
+lap: 3
+x1 322
+y1 233
+Hit at x of object: 200
+Hit at y of object: 383
+lap: 4
+x1 57
+y1 260
+Hit at x of object: 200
+Hit at y of object: 410
+lap: 5
+x1 159
+y1 348
+Hit at x of object: 200
+Hit at y of object: 498
+lap: 6
+x1 91
+y1 289
+Hit at x of object: 200
+Hit at y of object: 439
+lap: 7
+x1 236
+y1 84
+Hit at x of object: 200
+Hit at y of object: 234
+lap: 8
+x1 99
+y1 183
+Hit at x of object: 200
+Hit at y of object: 333
+lap: 9
+x1 280
+y1 288
+Hit at x of object: 200
+Hit at y of object: 438
+lap: 10
+Congrats, you win the game!
+x1 120
+y1 360
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: true
+Hit at x of object: 200
+Hit at y of object: 510
+Game over
+Time executed: 1553374169 seconds
+===== Time execute: 2019/03/23 16:51:07 ======
+Checking for updates
+No new updates
+x1 62
+y1 199
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: true
+Hit at x of object: 190
+Hit at y of object: 340
+lap: 1
+x1 229
+y1 410
+Hit at x of object: 180
+Hit at y of object: 560
+Game over
+Time executed: 1553374288 seconds
+===== Time execute: 2019/03/23 17:13:04 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 1553375596 seconds
+===== Time execute: 2019/03/23 17:17:32 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 17 seconds

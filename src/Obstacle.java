@@ -3,6 +3,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.PrintWriter;
+
 public class Obstacle {
 	public static void main(String[] args) throws Exception {
 		   long startTime = System.currentTimeMillis();
@@ -12,6 +14,9 @@ public class Obstacle {
 		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		Frychicken fry = new Frychicken();
 		 est.ass(startTime);
+		 PrintWriter writer = new PrintWriter(System.getProperty("user.dir")+"/temp.txt", "UTF-8");
+		 writer.print(startTime);
+		 writer.close();
 		boolean darkmode = false;
 		if (fry.Darkmode() !=1) {
 			darkmode = true;

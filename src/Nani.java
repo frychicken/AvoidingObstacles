@@ -59,6 +59,7 @@ public class Nani {
 			}
 		boolean debugg = true;
 		boolean sound = true;
+		boolean gamem = false;
 		int n = -1;
 		int st = Integer.valueOf(reduc.substring(reduc.indexOf(",")+1,reduc.indexOf("*")));
 		int stt = Integer.valueOf(reduc.substring(reduc.indexOf("^")+1, reduc.indexOf("&")));
@@ -77,7 +78,11 @@ public class Nani {
 					autopilot = true;
 				}
 				else autopilot = false;
-				exec.assin(debugg, sound, autopilot);
+				if (Dog_.emaa != 1) {
+					gamem = false;
+				}
+				else gamem = true;
+				exec.assin(debugg, sound, autopilot, gamem);
 			}
 			else { 
 				debugg = true; 
@@ -89,25 +94,39 @@ public class Nani {
 					autopilot = true;
 				}
 				else autopilot = false;
-				exec.assin(debugg, sound, autopilot);
+				if (Dog_.emaa != 1) {
+					gamem = false;
+				}
+				else gamem = true;
+				exec.assin(debugg, sound, autopilot, gamem);
 			}
 
 			if (n == -1) {
 				String str1 = "Debug mode: "+debugg;
 				String str2 = "Sound: "+sound;
 				String str3 = "Auto-pilot: "+autopilot;
+				String str4 = "Game mode: "+gamem;
 				System.out.println("Debug mode = " +debugg);
 				System.out.println("Sound: " +sound);
 				System.out.println("Auto-pilot= "+autopilot);
+				System.out.println("Game mode: "+gamem);
+
 				fry.writeLog(str1);
 				fry.writeLog(str2);
 				fry.writeLog(str3);
+				fry.writeLog(str4);
+
 			}
 			exec.run();
 			int cpp = i++;
 			System.out.println("lap: "+ cpp);
 			fry.writeLog("lap: " +cpp);
 			n++;
+		}
+		if (gamem) {
+		fry.YouWin();
+		fry.writeLog("Congrats, you win the game!");
+		System.out.println("You Win, congrats!");
 		}
 		if (fry.ChickenNotFood() != 0) {  System.out.println("Ok, doing it"); Nihaoma(); }
 		else return;
