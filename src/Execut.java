@@ -26,14 +26,16 @@ public class Execut  extends Component {
 	boolean autopilot = false;
 	boolean dark;
 	boolean game;
+	boolean ca;
 	Frychicken fry = new Frychicken();
 	Estima est = new Estima();
-	public Execut(int userin, Color object, Color obstacle, int i, int b, boolean darkmode) {
+	public Execut(int userin, Color object, Color obstacle, int i, int b, boolean darkmode, boolean ca) {
 		this.object = object;
 		this.obstacle = obstacle;
 		lalala = i;
 		alala = b;
 		this.userin = userin;
+		this.ca = ca;
 		dark = darkmode;
 	}
 	public void assin(boolean debugg, boolean sound, boolean autopilot, boolean gamem) throws IOException {
@@ -141,6 +143,8 @@ public class Execut  extends Component {
 					g.drawString("lab(s): "+alala, 60, 680);	
 					g.drawString("auto-pilot: "+autopilot, 250, 690);	
 					g.drawString("Game mode: "+game, 250, 705);	
+					g.drawString("Custom Algorithm: "+ca, 250, 720);	
+
 
 				}
 			}
@@ -239,7 +243,15 @@ public class Execut  extends Component {
 	} catch (Exception e) {
 		fry.writeLog(e.toString());
 	}
-	
+	frame.setVisible(false);
+
+	Nani nina = new Nani(dark);
+	try {
+		nina.Nihaoma();
+	} catch (Exception e) {
+        fry.writeLog(e.toString());
+		e.printStackTrace();
+	}
 	System.exit(0);
 	}
 	

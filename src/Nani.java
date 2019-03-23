@@ -10,14 +10,7 @@ public class Nani {
 		this.darkmode= darkmode;
 	}
 	static Frychicken fry = new Frychicken();
-	public void DownC() throws Exception {
-		if (fry.QuesCus() == 0) {
-			downloadCus();		
-			}
-		else {
-			return;
-		}
-	}
+
 	public void downloadCus() {
 		Frychicken fry = new Frychicken();
 		String cheee = System.getProperty("user.dir").toString();
@@ -60,14 +53,21 @@ public class Nani {
 		boolean debugg = true;
 		boolean sound = true;
 		boolean gamem = false;
+		boolean ca = false;
 		int n = -1;
 		int st = Integer.valueOf(reduc.substring(reduc.indexOf(",")+1,reduc.indexOf("*")));
 		int stt = Integer.valueOf(reduc.substring(reduc.indexOf("^")+1, reduc.indexOf("&")));
 		int sttt = Integer.valueOf(reduc.substring(reduc.indexOf("&")+1));
 		boolean autopilot = true;
 		System.out.println("Obstacle(s): "+ userin);
+		
+		if (Dog_.outofideasfornames == 1) {
+			downloadCus();
+			ca = true;
+		}
+		
 		while (i <= b) {
-			Execut exec = new Execut(userin, object, obstacle,i,b, darkmode); 
+			Execut exec = new Execut(userin, object, obstacle,i,b, darkmode, ca); 
 			if (st != 1) {
 				debugg = false;
 				if (stt != 1) {
@@ -106,15 +106,18 @@ public class Nani {
 				String str2 = "Sound: "+sound;
 				String str3 = "Auto-pilot: "+autopilot;
 				String str4 = "Game mode: "+gamem;
+				String str5 = "Custom algorithm: "+ca;
 				System.out.println("Debug mode = " +debugg);
 				System.out.println("Sound: " +sound);
 				System.out.println("Auto-pilot= "+autopilot);
 				System.out.println("Game mode: "+gamem);
-
+                System.out.println("Custom algorithm: "+ca);
+				
 				fry.writeLog(str1);
 				fry.writeLog(str2);
 				fry.writeLog(str3);
 				fry.writeLog(str4);
+				fry.writeLog(str5);
 
 			}
 			exec.run();

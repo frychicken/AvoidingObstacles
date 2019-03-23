@@ -70,7 +70,6 @@ public class Obstacle {
 		frame.setVisible(false);
 		System.out.println();
 		Nani nina = new Nani(darkmode);
-		nina.DownC();
 		nina.Nihaoma();
 		System.out.println("All Done!");
 		fry.writeLog("All Done");

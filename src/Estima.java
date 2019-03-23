@@ -24,13 +24,13 @@ public void ass(long est) {
 		  while ((st = br.readLine()) != null) 
 		    est = Long.valueOf(st);
 	} catch (FileNotFoundException e) {
-		// TODO Auto-generated catch block
+		fry.writeLog(e.toString());
 		e.printStackTrace();
 	} catch (NumberFormatException e) {
-		// TODO Auto-generated catch block
+		fry.writeLog(e.toString());
 		e.printStackTrace();
 	} catch (IOException e) {
-		// TODO Auto-generated catch block
+		fry.writeLog(e.toString());
 		e.printStackTrace();
 	} 
 	  

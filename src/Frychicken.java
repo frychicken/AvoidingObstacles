@@ -16,7 +16,7 @@ public class Frychicken {
 	}
 	
 	public void YouLose() throws Exception {
-        JOptionPane.showMessageDialog((Component) null, "The program will now exit!",
+        JOptionPane.showMessageDialog((Component) null, "Game over, R.I.P",
 				"GameOver", JOptionPane.CLOSED_OPTION);
 	}
 	
