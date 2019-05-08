@@ -33,7 +33,9 @@ class Dog_ extends JFrame implements ActionListener  {
 	static int outofideasfornames =0;
 	Estima est = new Estima();
 	static List<Integer> doggo = new LinkedList<Integer>();
-	public String cat_() throws Exception{
+	public void cat_() throws Exception{
+		ff =0;
+		doggo.clear();
 		final URI uri = new URI("https://github.com/frychicken/art-IF-icial-Intelligence/blob/master/README.md");
 		frame = new JFrame("Setup");
 
@@ -204,11 +206,9 @@ class Dog_ extends JFrame implements ActionListener  {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				} 
-			String doge = doggo.get(0) +"." + doggo.get(1)+","+ff+"*"+doggo.get(2)+"!"+doggo.get(3)+"@"+doggo.get(4)+"#"+doggo.get(5)+"$"+doggo.get(6)+"%"+doggo.get(7)+"^"+fff+"&"+owen;
-			ff =0;
-			doggo.clear();
+		
 			frame.setVisible(false);
-			return doge;
+			
 		}
 	}
 

@@ -35,19 +35,26 @@ public class Nani {
 		int b = 10; 
 		Dog_ doge = new Dog_();
 		doge.asss(darkmode);
-		String reduc = doge.cat_();
-		Color obstacle = new Color(Integer.valueOf(reduc.substring(reduc.indexOf("*")+1,reduc.indexOf("!"))),Integer.valueOf(reduc.substring(reduc.indexOf("!")+1,reduc.indexOf("@"))),Integer.valueOf(reduc.substring(reduc.indexOf("@")+1,reduc.indexOf("#"))));
-		Color object = new Color(Integer.valueOf(reduc.substring(reduc.indexOf("#")+1,reduc.indexOf("$"))),Integer.valueOf(reduc.substring(reduc.indexOf("$")+1,reduc.indexOf("%"))),Integer.valueOf(reduc.substring(reduc.indexOf("%")+1, reduc.indexOf("^"))));
-		int tess = reduc.indexOf(".");
-		b = Integer.valueOf(reduc.substring(0,tess));
+		doge.cat_();
+         int c1 =  Dog_.doggo.get(2);
+         int c2 =  Dog_.doggo.get(3);
+         int c3 =  Dog_.doggo.get(4);
+         int c4 =  Dog_.doggo.get(5);
+         int c5 =  Dog_.doggo.get(6);
+         int c6 =  Dog_.doggo.get(7);
+		
+		Color obstacle = new Color( c1, c2, c3);
+		Color object = new Color( c4,c5,c6);
+
+		b = Dog_.doggo.get(0);
 		System.out.println("Lab(s): "+b);
 		int i = 1;
-		int userin = Integer.valueOf(reduc.substring(tess+1, reduc.indexOf(",")));
+		int userin = Dog_.doggo.get(1);
 		if (userin > 3 || userin<=0)
 			while (userin >3 || userin <=0) { 
 				if (userin >3 || userin <=0)
 					fry.ChickenIsNotFood();
-				userin = Integer.valueOf(doge.cat_().substring(tess+1, reduc.indexOf(",")));
+				userin = Dog_.doggo.get(1);
 
 			}
 		boolean debugg = true;
@@ -55,9 +62,9 @@ public class Nani {
 		boolean gamem = false;
 		boolean ca = false;
 		int n = -1;
-		int st = Integer.valueOf(reduc.substring(reduc.indexOf(",")+1,reduc.indexOf("*")));
-		int stt = Integer.valueOf(reduc.substring(reduc.indexOf("^")+1, reduc.indexOf("&")));
-		int sttt = Integer.valueOf(reduc.substring(reduc.indexOf("&")+1));
+		int st = Dog_.ff;
+		int stt = Dog_.fff;
+		int sttt = Dog_.owen;
 		boolean autopilot = true;
 		System.out.println("Obstacle(s): "+ userin);
 		

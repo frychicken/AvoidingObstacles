@@ -1375,3 +1375,204 @@ Hit at x of object: 200
 Hit at y of object: 328
 Program terminated by user
 Time executed: 59 seconds
+===== Time execute: 2019/03/23 21:56:09 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 19 seconds
+===== Time execute: 2019/03/23 21:56:42 ======
+Checking for updates
+No new updates
+x1 43
+y1 155
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: false
+Custom algorithm: false
+lap: 1
+x1 323
+y1 274
+Hit at x of object: 200
+Hit at y of object: 424
+lap: 2
+x1 119
+y1 333
+Hit at x of object: 200
+Hit at y of object: 483
+lap: 3
+x1 180
+y1 298
+Hit at x of object: 200
+Hit at y of object: 448
+Program terminated by user
+Time executed: 22 seconds
+===== Time execute: 2019/03/23 21:58:20 ======
+Checking for updates
+No new updates
+x1 293
+y1 117
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: false
+Custom algorithm: false
+Hit at x of object: 200
+Hit at y of object: 267
+lap: 1
+x1 62
+y1 402
+Hit at x of object: 200
+Hit at y of object: 552
+lap: 2
+x1 150
+y1 357
+Hit at x of object: 200
+Hit at y of object: 507
+Program terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/03/31 21:50:32 ======
+Checking for updates
+No new updates
+x1 114
+y1 339
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: false
+Custom algorithm: false
+Hit at x of object: 200
+Hit at y of object: 489
+lap: 1
+x1 106
+y1 270
+Hit at x of object: 200
+Hit at y of object: 420
+lap: 2
+x1 70
+y1 199
+Hit at x of object: 200
+Hit at y of object: 349
+lap: 3
+x1 158
+y1 210
+Hit at x of object: 200
+Hit at y of object: 360
+lap: 4
+x1 188
+y1 392
+Hit at x of object: 200
+Hit at y of object: 542
+lap: 5
+x1 210
+y1 360
+Hit at x of object: 200
+Hit at y of object: 510
+Program terminated by user
+Time executed: 31 seconds
+===== Time execute: 2019/05/08 18:33:28 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/05/08 18:36:54 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/05/08 18:37:38 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/05/08 18:38:45 ======
+Program terminated by user
+Time executed: 10 seconds
+===== Time execute: 2019/05/08 18:39:02 ======
+Checking for updates
+No new updates
+Debug mode: false
+Sound: false
+Auto-pilot: true
+Game mode: false
+Custom algorithm: false
+lap: 1
+lap: 2
+lap: 3
+Program terminated by user
+Time executed: 18 seconds
+===== Time execute: 2019/05/08 18:39:53 ======
+Checking for updates
+No new updates
+Program terminated by user
+Time executed: 13 seconds
+===== Time execute: 2019/05/08 18:40:56 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/05/08 18:41:38 ======
+Checking for updates
+No new updates
+===== Time execute: 2019/05/08 18:42:36 ======
+Checking for updates
+No new updates
+Debug mode: false
+Sound: false
+Auto-pilot: true
+Game mode: false
+Custom algorithm: false
+lap: 1
+lap: 2
+Program terminated by user
+Time executed: 25 seconds
+===== Time execute: 2019/05/08 18:46:42 ======
+Checking for updates
+No new updates
+x1 38
+y1 314
+x2 -199
+y2 34
+Debug mode: true
+Sound: false
+Auto-pilot: true
+Game mode: false
+Custom algorithm: false
+lap: 1
+x1 108
+y1 381
+x2 345
+y2 291
+Hit at x of object: 200
+Hit at y of object: 531
+lap: 2
+x1 171
+y1 321
+x2 -66
+y2 239
+Hit at x of object: 200
+Hit at y of object: 471
+lap: 3
+x1 139
+y1 236
+x2 376
+y2 111
+Hit at x of object: 200
+Hit at y of object: 386
+lap: 4
+x1 153
+y1 154
+x2 390
+y2 135
+Hit at x of object: 200
+Hit at y of object: 304
+lap: 5
+Debug mode: false
+Sound: false
+Auto-pilot: true
+Game mode: false
+Custom algorithm: false
+lap: 1
+lap: 2
+lap: 3
+lap: 4
+lap: 5
+lap: 6
+lap: 7
+lap: 8
+lap: 9
+lap: 10
+All Done
+Time executed: 60 seconds
